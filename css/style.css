@@ -323,3 +323,35 @@ body { font-family: var(--fn); background: var(--bg); color: var(--t1); line-hei
   .cc-grid { grid-template-columns: 1fr; }
   .footer-inner { flex-direction: column; text-align: center; }
 }
+
+.btn-download-large {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--fn);
+  font-size: 1rem;
+  font-weight: 700;
+  background: var(--blue-d);
+  color: #ffffff;
+  border: none;
+  padding: 13px 32px;
+  border-radius: 100px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.btn-download-large:hover {
+  background: #1557b0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(26, 115, 232, 0.45);
+}
+
+.btn-download-large:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.btn-download-large svg {
+  flex-shrink: 0;
+}

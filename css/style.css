@@ -326,7 +326,7 @@ body { font-family: var(--fn); background: var(--bg); color: var(--t1); line-hei
 }
 @media (max-width: 768px) {
   .nav-links { display: none; }
-  .btn-dl { display: none; }
+  .mobilehide { display: none; }
   .hamburger { display: flex; }
   .hero { padding-top: 84px; }
   .section { padding: 4rem 0; }

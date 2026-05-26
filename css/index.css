@@ -131,7 +131,11 @@ a { text-decoration: none; color: inherit; }
 .mobile-nav.open { transform: translateY(0); }
 .mobile-nav a { font-size: 1rem; font-weight: 500; color: var(--t1); padding: 0.75rem 1rem; border-radius: var(--r-sm); }
 .mobile-nav a:hover { background: var(--bg3); }
-.mob-cta { color: var(--gold) !important; font-weight: 700 !important; }
+.mob-cta { color: var(--gold) !important;
+  font-weight: 700 !important;
+  border-top: 1px solid var(--border);
+  padding-top: 0.75rem;
+  margin-top: 0.25rem; }
 
 /* ── REVEAL ANIMATION ── */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.75s var(--ease), transform 0.75s var(--ease); }

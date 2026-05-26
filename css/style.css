@@ -67,12 +67,18 @@ body { font-family: var(--fn); background: var(--bg); color: var(--t1); line-hei
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ← key fix */
+  justify-content: flex-start; /* ← changed from space-between */
   gap: 0.5rem;
   padding: 0 2rem;
   height: 62px;
 }
-.nav-links { display: flex; gap: 2px; list-style: none; margin-right: auto; }
+.nav-links {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+  margin: 0 0 0 1.5rem;  /* ← removed auto, links sit left */
+  margin-right: auto;    /* ← pushes download button to far right */
+}
 .nav-links a {
   font-size: 0.825rem; font-weight: 500; color: var(--t2);
   text-decoration: none; padding: 6px 12px; border-radius: var(--r-sm);
